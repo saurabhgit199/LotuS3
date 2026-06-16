@@ -1562,7 +1562,7 @@ sub get_programs{
 	}
 
 
-	my $rdpf = "http://lotus2.earlham.ac.uk/lotus/packs/rdp_classifier_2.12.zip"; #"http://downloads.sourceforge.net/project/rdp-classifier/rdp-classifier/rdp_classifier_2.6.zip?r=http%3A%2F%2Fsourceforge.net%2Fprojects%2Frdp-classifier%2F&ts=1391590725&use_mirror=netcologne";
+	my $rdpf = "http://lotus2.earlham.ac.uk/lotus/packs/rdp_classifier_2.14.zip"; #"http://downloads.sourceforge.net/project/rdp-classifier/rdp-classifier/rdp_classifier_2.6.zip?r=http%3A%2F%2Fsourceforge.net%2Fprojects%2Frdp-classifier%2F&ts=1391590725&use_mirror=netcologne";
 	#RDP classifier
 	$exe = "$bdir/rdp.zip";
 	#system("wget -O $exe $rdpf");
@@ -1570,7 +1570,7 @@ sub get_programs{
 	#die("unzip $exe -d $bdir");
 	system("unzip -o -q $exe -d $bdir");
 	unlink($exe);
-	$exe = $bdir."rdp_classifier_2.12/dist/classifier.jar";
+	$exe = $bdir."rdp_classifier_2.14/dist/classifier.jar";
 	@txt = addInfoLtS("RDPjar",$exe,\@txt,1);
 
 
